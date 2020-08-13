@@ -1,0 +1,60 @@
+@media screen and (min-width: 700px) {
+    %grid-gapped {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2em;
+    }
+
+    %full-track {
+        grid-column: 1 / -1;
+    }
+
+    .dashboard {
+        @extend %grid-gapped;
+
+        .heading {
+            @extend %full-track;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+
+            &__divider {
+                display: none;
+            }
+
+            &__toggle {
+                margin-left: 1em;
+            }
+
+            &__container {
+                &--mode {
+                    justify-content: flex-start;
+                }
+            }
+        }
+
+        .card {
+            margin: 0;
+        }
+    }
+
+    .overview {
+        @extend %grid-gapped;
+        margin-bottom: 1em;
+
+        &__header {
+            @extend %full-track;
+            margin-bottom: 0;
+        }
+
+        .card {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .dashboard, .overview {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -24,11 +24,7 @@ body {
 
 /* === Layout === */
 .container {
-    background: linear-gradient(
-        0deg,
-        $bg-primary 90%,
-        $bg-secondary 10%
-    );
+    background: linear-gradient(0deg, $bg-primary 90%, $bg-secondary 10%);
     padding: 1.25em 0;
 }
 
@@ -41,5 +37,6 @@ body {
     background: hsl(230, 22%, 74%) !important;
 }
 
-@import 'dashboard';
-@import 'overview';
+@import "dashboard";
+@import "overview";
+@import "responsive";
