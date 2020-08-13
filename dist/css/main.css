@@ -51,7 +51,7 @@
 .dashboard .card, .overview .card {
   background-color: var(--primary-color);
   border-radius: 8px;
-  padding: 2em;
+  padding: 1.5em 2em;
   position: relative;
   overflow: hidden;
   -webkit-transition: color 750ms ease, background 350ms ease, -webkit-filter 500ms ease;
@@ -288,13 +288,13 @@ body {
 
 .dashboard .card__stat {
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .dashboard .card__identifier {
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.4em;
   margin-left: 0.5em;
 }
 
@@ -335,11 +335,16 @@ body {
   margin-bottom: 2em;
 }
 
+.overview {
+  margin-bottom: 4em;
+}
+
 .overview__header {
   margin: 2em 0 1em 0;
 }
 
 .overview .card {
+  padding: 1.5em 2em;
   margin-bottom: 1.25em;
   display: -ms-grid;
   display: grid;
@@ -387,7 +392,8 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2em;
+    grid-column-gap: 2em;
+    grid-row-gap: 1.5em;
   }
   .dashboard .heading, .overview__header {
     grid-column: 1 / -1;
@@ -422,9 +428,6 @@ body {
   .dashboard .card {
     margin: 0;
     border-radius: 4px;
-  }
-  .overview {
-    margin-bottom: 1em;
   }
   .overview__header {
     margin-bottom: 0;

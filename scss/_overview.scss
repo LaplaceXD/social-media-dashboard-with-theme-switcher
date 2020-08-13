@@ -1,6 +1,7 @@
 .overview {
     @extend %container-size;
-
+    margin-bottom: 4em;
+    
     &__header {
         @extend %section-heading;
         margin: 2em 0 1em 0;
@@ -8,6 +9,7 @@
 
     .card {
         @extend %card;
+        padding: 1.5em 2em;
         margin-bottom: 1.25em;
         display: grid;
         grid-template-columns: 1fr 1fr;

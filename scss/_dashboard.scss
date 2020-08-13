@@ -85,14 +85,14 @@
 
         &__stat {
             font-weight: 700;
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
 
         &__identifier {
             @extend %heading-text;
             font-weight: 400;
             text-transform: uppercase;
-            letter-spacing: 0.5em;
+            letter-spacing: 0.4em;
             margin-left: 0.5em;
         }
 

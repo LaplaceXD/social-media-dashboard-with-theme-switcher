@@ -2,7 +2,8 @@
     %grid-gapped {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2em;
+        grid-column-gap: 2em;
+        grid-row-gap: 1.5em;
     }
 
     %full-track {
@@ -49,7 +50,6 @@
 
     .overview {
         @extend %grid-gapped;
-        margin-bottom: 1em;
 
         &__header {
             @extend %full-track;
