@@ -1,0 +1,36 @@
+@import "config";
+@import "placeholder";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* === Typogrpahy === */
+body {
+    font-family: $main-font;
+    color: $card-dark-secondary;
+    font-weight: 400;
+}
+
+/* === Layout === */
+.container {
+    background: linear-gradient(
+        0deg,
+        map-get($bg-dark-color, primary) 80%,
+        map-get($bg-dark-color, secondary) 20%
+    );
+
+    padding: 1.25em 0;
+}
+
+@import 'dashboard';

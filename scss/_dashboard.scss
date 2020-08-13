@@ -1,0 +1,104 @@
+.dashboard {
+    @extend %container-size;
+
+    .heading {
+        margin-bottom: 1.5em;
+
+        &__title {
+            letter-spacing: 0.02em;
+            margin-bottom: 0.2em;
+        }
+
+        &__subtitle,
+        &__mode {
+            @extend %heading-text;
+        }
+
+        &__divider {
+            @extend %divider;
+            margin-top: 0.25em;
+        }
+
+        &__toggle {
+            display: flex;
+            align-items: center;
+            border: none;
+            width: 3.5em;
+            height: 1.65em;
+            border-radius: 1em;
+            background: to-linear-gradient($toggle-color);
+
+            &--circle {
+                background-color: $card-dark-primary;
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                transform: scale(1.7);
+                margin-left: 0.5em;
+            }
+        }
+
+        &__container {
+            &--mode,
+            &--title {
+                padding: 1em 0;
+            }
+
+            &--mode {
+                @extend %flex-spaced;
+            }
+        }
+    }
+
+    .card {
+        background-color: $card-dark-primary;
+        border-radius: 8px;
+        padding: 2em;
+        margin-bottom: 2em;
+
+        &__name {
+            @extend %heading-text-small;
+        }
+
+        &__stat {
+            font-weight: 700;
+            font-size: 4rem;
+        }
+
+        &__identifier {
+            @extend %heading-text;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.5em;
+            margin-left: 0.5em;
+        }
+
+        &__update,
+        &__day {
+            @extend %heading-text-small;
+            margin-left: 0.25em;
+            font-weight: 700;
+
+            &--up {
+                color: $stat-increase-color;
+            }
+
+            &--down {
+                color: $stat-decrease-color;
+            }
+        }
+
+        div {
+            @extend %flex-center;
+
+            &:nth-child(1) {
+                margin-bottom: 1em;
+            }
+
+            &:nth-child(2) {
+                flex-direction: column;
+                margin-bottom: 2em;
+            }
+        }
+    }
+}

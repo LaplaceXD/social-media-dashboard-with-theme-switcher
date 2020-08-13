@@ -1,0 +1,38 @@
+/*=== Layout ===*/
+%container-size {
+    width: 85%;
+    margin: auto;
+}
+
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%flex-spaced {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* === Skins === */
+%divider {
+    width: 100%;
+    background-color: $card-dark-primary;
+    height: 1px;
+}
+
+/* === TypoGraphy === */
+%heading-text {
+    color: $card-dark-accent;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+%heading-text-small {
+    @extend %heading-text;
+    font-size: 0.75rem;
+    margin-left: 1em;
+}

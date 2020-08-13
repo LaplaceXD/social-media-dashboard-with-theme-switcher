@@ -1,1 +1,169 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+/*=== Responsive Sizes ===*/
+/* === Colors === */
+/*=== Layout ===*/
+.dashboard {
+  width: 85%;
+  margin: auto;
+}
+
+.dashboard .card div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dashboard .heading__container--mode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* === Skins === */
+.dashboard .heading__divider {
+  width: 100%;
+  background-color: #252a41;
+  height: 1px;
+}
+
+/* === TypoGraphy === */
+.dashboard .card__name, .dashboard .card__update, .dashboard .card__day, .dashboard .heading__subtitle, .dashboard .heading__mode, .dashboard .card__identifier {
+  color: #8b97c6;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.dashboard .card__name, .dashboard .card__update, .dashboard .card__day {
+  font-size: 0.75rem;
+  margin-left: 1em;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* === Typogrpahy === */
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 400;
+}
+
+/* === Layout === */
+.container {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #1e202a), color-stop(20%, #1f212e));
+  background: linear-gradient(0deg, #1e202a 80%, #1f212e 20%);
+  padding: 1.25em 0;
+}
+
+.dashboard .heading {
+  margin-bottom: 1.5em;
+}
+
+.dashboard .heading__title {
+  letter-spacing: 0.02em;
+  margin-bottom: 0.2em;
+}
+
+.dashboard .heading__divider {
+  margin-top: 0.25em;
+}
+
+.dashboard .heading__toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  width: 3.5em;
+  height: 1.65em;
+  border-radius: 1em;
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(90deg, #378fe6, #3eda82);
+}
+
+.dashboard .heading__toggle--circle {
+  background-color: #252a41;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  margin-left: 0.5em;
+}
+
+.dashboard .heading__container--mode, .dashboard .heading__container--title {
+  padding: 1em 0;
+}
+
+.dashboard .card {
+  background-color: #252a41;
+  border-radius: 8px;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+.dashboard .card__stat {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.dashboard .card__identifier {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  margin-left: 0.5em;
+}
+
+.dashboard .card__update, .dashboard .card__day {
+  margin-left: 0.25em;
+  font-weight: 700;
+}
+
+.dashboard .card__update--up, .dashboard .card__day--up {
+  color: #1db489;
+}
+
+.dashboard .card__update--down, .dashboard .card__day--down {
+  color: #dc414c;
+}
+
+.dashboard .card div:nth-child(1) {
+  margin-bottom: 1em;
+}
+
+.dashboard .card div:nth-child(2) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2em;
+}
+/*# sourceMappingURL=main.css.map */
