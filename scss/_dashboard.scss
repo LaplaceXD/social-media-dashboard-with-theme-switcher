@@ -29,7 +29,7 @@
             background: to-linear-gradient($toggle-color);
 
             &--circle {
-                background-color: $card-dark-primary;
+                background-color: $primary-color;
                 border-radius: 50%;
                 width: 10px;
                 height: 10px;
@@ -51,10 +51,12 @@
     }
 
     .card {
-        background-color: $card-dark-primary;
+        background-color: $primary-color;
         border-radius: 8px;
         padding: 2em;
         margin-bottom: 2em;
+        position: relative;
+        overflow: hidden;
 
         &__name {
             @extend %heading-text-small;
@@ -86,6 +88,26 @@
             &--down {
                 color: $stat-decrease-color;
             }
+        }
+
+        &--facebook::before {
+            @extend %card-top-border;
+            background: $facebook-color;
+        }
+
+        &--twitter::before {
+            @extend %card-top-border;
+            background: $twitter-color;
+        }
+
+        &--insta::before {
+            @extend %card-top-border;
+            background: to-linear-gradient($instagram-color);
+        }
+
+        &--youtube::before {
+            @extend %card-top-border;
+            background: $youtube-color;
         }
 
         div {

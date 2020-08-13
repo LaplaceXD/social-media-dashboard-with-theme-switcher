@@ -19,13 +19,22 @@
 /* === Skins === */
 %divider {
     width: 100%;
-    background-color: $card-dark-primary;
+    background-color: $primary-color;
     height: 1px;
+}
+
+%card-top-border {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
 }
 
 /* === TypoGraphy === */
 %heading-text {
-    color: $card-dark-accent;
+    color: $accent-color;
     font-weight: 700;
     font-size: 0.85rem;
     letter-spacing: 0.05em;
