@@ -405,6 +405,9 @@ body {
             justify-content: space-between;
     margin-bottom: 0;
   }
+  .dashboard .heading__title {
+    font-size: 2rem;
+  }
   .dashboard .heading__divider {
     display: none;
   }
