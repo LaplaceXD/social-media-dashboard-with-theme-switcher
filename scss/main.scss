@@ -29,13 +29,16 @@ body {
         $bg-primary 90%,
         $bg-secondary 10%
     );
-
     padding: 1.25em 0;
 }
 
 /* === States === */
 *.is-toggled {
     margin-left: 2.2em !important;
+}
+
+*.active {
+    background: hsl(230, 22%, 74%) !important;
 }
 
 @import 'dashboard';

@@ -13,7 +13,7 @@
         &__subtitle,
         &__mode {
             @extend %heading-text;
-            transition: color 1000ms ease;
+            transition: all 100ms ease;
         }
 
         &__divider {
@@ -29,6 +29,7 @@
             height: 1.65em;
             border-radius: 1em;
             background: to-linear-gradient($toggle-color);
+            transition: all 500ms ease;
 
             &--circle {
                 background-color: $primary-color;
@@ -38,6 +39,7 @@
                 transform: scale(1.7);
                 margin-left: 0.5em;
                 transition: margin 500ms ease;
+                transition: all 500ms ease;
             }
         }
 
