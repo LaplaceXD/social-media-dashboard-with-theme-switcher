@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/*=== Responsive Sizes ===*/
+$mobile-size: 375px;
+$desktop-size: 1440px;
+
+/* === Colors === */
+// Mains
+$stat-increase-color: hsl(163, 72%, 41%);
+$stat-decrease-color: hsl(356, 69%, 56%);
+$facebook-color: hsl(208, 92%, 53%);
+$twitter-color: hsl(203, 89%, 53%);
+$instagram-color: ( 
+    primary: hsl(208, 92%, 53%),
+    secondary: hsl(329, 70%, 58%)
+    );
+$youtube-color: hsl(348, 97%, 39%);
+
+$toggle-color: (
+    primary: hsl(210, 78%, 56%),
+    secondary: hsl(146, 68%, 55%)
+    );
+
+$toggle-light-theme: hsl(230, 22%, 74%);
+
+// Neutrals -> Dark Theme
+$bg-dark-color: (
+    primary: hsl(230, 17%, 14%),
+    secondary: hsl(232, 19%, 15%)
+);
+$card-dark-primary: hsl(228, 28%, 20%);
+$card-dark-secondary: hsl(0, 0%, 100%);
+$card-dark-accent: hsl(228, 34%, 66%);
+
+// Neutrals -> Light Theme
+$bg-light-color: (
+    primary: hsl(0, 0%, 100%),
+    secondary: hsl(225, 100%, 98%)
+);
+$card-light-primary: hsl(227, 47%, 96%);
+$card-light-secondary: hsl(228, 12%, 44%);
+$card-light-accent: hsl(230, 17%, 14%);
+
+$main-font: 'Inter', sans-serif;
