@@ -26,8 +26,8 @@ body {
 .container {
     background: linear-gradient(
         0deg,
-        map-get($bg-dark-color, primary) 80%,
-        map-get($bg-dark-color, secondary) 20%
+        $bg-primary 85%,
+        $bg-secondary 15%
     );
 
     padding: 1.25em 0;

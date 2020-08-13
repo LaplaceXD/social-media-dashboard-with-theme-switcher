@@ -94,8 +94,8 @@ body {
 
 /* === Layout === */
 .container {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #1e202a), color-stop(20%, #1f212e));
-  background: linear-gradient(0deg, #1e202a 80%, #1f212e 20%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(85%, var(--bg-primary-color)), color-stop(15%, var(--bg-secondary-color)));
+  background: linear-gradient(0deg, var(--bg-primary-color) 85%, var(--bg-secondary-color) 15%);
   padding: 1.25em 0;
 }
 
