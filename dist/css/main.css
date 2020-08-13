@@ -116,6 +116,11 @@ body {
   padding: 1.25em 0;
 }
 
+/* === States === */
+*.is-toggled {
+  margin-left: 2.2em;
+}
+
 .dashboard .heading {
   margin-bottom: 1.5em;
 }
