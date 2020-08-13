@@ -291,6 +291,10 @@ body {
   .dashboard .heading, .overview__header {
     grid-column: 1 / -1;
   }
+  .container {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, var(--bg-primary-color)), color-stop(20%, var(--bg-secondary-color)));
+    background: linear-gradient(0deg, var(--bg-primary-color) 80%, var(--bg-secondary-color) 20%);
+  }
   .dashboard .heading {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -326,7 +330,12 @@ body {
 }
 
 @media screen and (min-width: 1280px) {
-  .dashboard, .overview {
+  .container {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, var(--bg-primary-color)), color-stop(30%, var(--bg-secondary-color)));
+    background: linear-gradient(0deg, var(--bg-primary-color) 70%, var(--bg-secondary-color) 30%);
+  }
+  .dashboard,
+  .overview {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }

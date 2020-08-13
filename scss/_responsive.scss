@@ -9,6 +9,10 @@
         grid-column: 1 / -1;
     }
 
+    .container {
+        background: linear-gradient(0deg, $bg-primary 80%, $bg-secondary 20%);
+    }
+
     .dashboard {
         @extend %grid-gapped;
 
@@ -54,7 +58,12 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .dashboard, .overview {
+    .container {
+        background: linear-gradient(0deg, $bg-primary 70%, $bg-secondary 30%);
+    }
+
+    .dashboard,
+    .overview {
         grid-template-columns: repeat(4, 1fr);
     }
 }
