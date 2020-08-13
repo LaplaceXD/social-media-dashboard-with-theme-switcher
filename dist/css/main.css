@@ -11,7 +11,7 @@
 }
 
 /*=== Layout ===*/
-.dashboard {
+.dashboard, .overview {
   width: 85%;
   margin: auto;
 }
@@ -47,6 +47,14 @@
   height: 1px;
 }
 
+.dashboard .card {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  padding: 2em;
+  position: relative;
+  overflow: hidden;
+}
+
 .dashboard .card--facebook::before, .dashboard .card--twitter::before, .dashboard .card--insta::before, .dashboard .card--youtube::before {
   content: "";
   position: absolute;
@@ -67,6 +75,10 @@
 .dashboard .card__name, .dashboard .card__update, .dashboard .card__day {
   font-size: 0.75rem;
   margin-left: 1em;
+}
+
+.dashboard .heading__title {
+  letter-spacing: 0.02em;
 }
 
 *,
@@ -104,7 +116,6 @@ body {
 }
 
 .dashboard .heading__title {
-  letter-spacing: 0.02em;
   margin-bottom: 0.2em;
 }
 
@@ -142,12 +153,7 @@ body {
 }
 
 .dashboard .card {
-  background-color: var(--primary-color);
-  border-radius: 8px;
-  padding: 2em;
   margin-bottom: 2em;
-  position: relative;
-  overflow: hidden;
 }
 
 .dashboard .card__stat {

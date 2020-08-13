@@ -5,7 +5,7 @@
         margin-bottom: 1.5em;
 
         &__title {
-            letter-spacing: 0.02em;
+            @extend %section-heading;
             margin-bottom: 0.2em;
         }
 
@@ -51,12 +51,8 @@
     }
 
     .card {
-        background-color: $primary-color;
-        border-radius: 8px;
-        padding: 2em;
+        @extend %card;
         margin-bottom: 2em;
-        position: relative;
-        overflow: hidden;
 
         &__name {
             @extend %heading-text-small;
