@@ -31,6 +31,15 @@
             background: to-linear-gradient($toggle-color);
             transition: all 500ms ease;
 
+            &:hover {
+                cursor: pointer;
+            }
+            
+            &:focus {
+                outline: none;
+                border: none;
+            }
+
             &--circle {
                 background-color: $primary-color;
                 border-radius: 50%;

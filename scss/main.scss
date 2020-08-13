@@ -30,11 +30,16 @@ body {
 
 /* === States === */
 *.is-toggled {
-    margin-left: 2.2em !important;
+    margin-left: 2.3em !important;
+    margin-bottom: 0.05em;
 }
 
 *.active {
     background: hsl(230, 22%, 74%) !important;
+
+    &:hover {
+        background: to-linear-gradient($toggle-color) !important;
+    }
 }
 
 @import "dashboard";
