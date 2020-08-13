@@ -19,7 +19,7 @@
 /* === Skins === */
 %divider {
     width: 100%;
-    background-color: $primary-color;
+    background-color: $secondary-color;
     height: 1px;
 }
 
@@ -29,6 +29,7 @@
     padding: 2em;
     position: relative;
     overflow: hidden;
+    transition: color 1000ms ease;
 }
 
 %card-top-border {

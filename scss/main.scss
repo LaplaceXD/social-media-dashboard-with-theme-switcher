@@ -18,7 +18,7 @@ html {
 /* === Typogrpahy === */
 body {
     font-family: $main-font;
-    color: $card-dark-secondary;
+    color: $secondary-color;
     font-weight: 400;
 }
 
@@ -35,7 +35,7 @@ body {
 
 /* === States === */
 *.is-toggled {
-    margin-left: 2.2em;
+    margin-left: 2.2em !important;
 }
 
 @import 'dashboard';

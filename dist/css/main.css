@@ -43,7 +43,7 @@
 /* === Skins === */
 .dashboard .heading__divider {
   width: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   height: 1px;
 }
 
@@ -53,6 +53,8 @@
   padding: 2em;
   position: relative;
   overflow: hidden;
+  -webkit-transition: color 1000ms ease;
+  transition: color 1000ms ease;
 }
 
 .dashboard .card--facebook::before, .dashboard .card--twitter::before, .dashboard .card--insta::before, .dashboard .card--youtube::before {
@@ -105,7 +107,7 @@ html {
 /* === Typogrpahy === */
 body {
   font-family: "Inter", sans-serif;
-  color: white;
+  color: var(--secondary-color);
   font-weight: 400;
 }
 
@@ -118,15 +120,22 @@ body {
 
 /* === States === */
 *.is-toggled {
-  margin-left: 2.2em;
+  margin-left: 2.2em !important;
 }
 
 .dashboard .heading {
   margin-bottom: 1.5em;
+  -webkit-transition: color 1000ms ease;
+  transition: color 1000ms ease;
 }
 
 .dashboard .heading__title {
   margin-bottom: 0.2em;
+}
+
+.dashboard .heading__subtitle, .dashboard .heading__mode {
+  -webkit-transition: color 1000ms ease;
+  transition: color 1000ms ease;
 }
 
 .dashboard .heading__divider {
@@ -156,6 +165,8 @@ body {
   -webkit-transform: scale(1.7);
           transform: scale(1.7);
   margin-left: 0.5em;
+  -webkit-transition: margin 500ms ease;
+  transition: margin 500ms ease;
 }
 
 .dashboard .heading__container--mode, .dashboard .heading__container--title {
@@ -164,6 +175,11 @@ body {
 
 .dashboard .card {
   margin-bottom: 2em;
+}
+
+.dashboard .card__name {
+  -webkit-transition: color 1000ms ease;
+  transition: color 1000ms ease;
 }
 
 .dashboard .card__stat {
