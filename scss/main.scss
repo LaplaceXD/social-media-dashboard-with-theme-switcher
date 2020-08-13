@@ -43,37 +43,37 @@ body {
 }
 
 /* === Animation === */
-// *.float-in {
-//     transform: translateY(20%);
-//     opacity: 0;
-// }
+*.float-in {
+    transform: translateY(20%);
+    opacity: 0;
+}
 
-// @keyframes float-in {
-//     from {
-//         opacity: 0;
-//         transform: translateY(-20%);
-//     }
-//     to {
-//         opacity: 1;
-//         transform: translateY(0);
-//     }
-// }
+@keyframes float-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-// *.fade-in {
-//     transform: translateX(-64px);
-//     opacity: 0;
-// }
+*.fade-in {
+    transform: translateX(-64px);
+    opacity: 0;
+}
 
-// @keyframes fade-in {
-//     from {
-//         opacity: 0;
-//         transform: translateX(-64px);
-//     }
-//     to {
-//         opacity: 1;
-//         transform: translateX(0);
-//     }
-// }
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateX(-64px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 @import "dashboard";
 @import "overview";
