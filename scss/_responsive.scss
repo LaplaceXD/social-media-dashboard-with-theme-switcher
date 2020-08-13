@@ -71,5 +71,9 @@
     .dashboard,
     .overview {
         grid-template-columns: repeat(4, 1fr);
+
+        .card {
+            padding: 1.5em 2em;
+        }
     }
 }
