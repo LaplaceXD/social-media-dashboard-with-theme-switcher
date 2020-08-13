@@ -54,8 +54,10 @@
   padding: 2em;
   position: relative;
   overflow: hidden;
-  -webkit-transition: color 750ms ease, background 350ms ease;
-  transition: color 750ms ease, background 350ms ease;
+  -webkit-transition: color 750ms ease, background 350ms ease, -webkit-filter 500ms ease;
+  transition: color 750ms ease, background 350ms ease, -webkit-filter 500ms ease;
+  transition: color 750ms ease, background 350ms ease, filter 500ms ease;
+  transition: color 750ms ease, background 350ms ease, filter 500ms ease, -webkit-filter 500ms ease;
 }
 
 .dashboard .card--facebook::before, .dashboard .card--twitter::before, .dashboard .card--insta::before, .dashboard .card--youtube::before {
@@ -201,6 +203,12 @@ body {
   margin-bottom: 2em;
 }
 
+.dashboard .card:hover {
+  cursor: pointer;
+  -webkit-filter: contrast(0.9);
+          filter: contrast(0.9);
+}
+
 .dashboard .card__name {
   -webkit-transition: color 1000ms ease;
   transition: color 1000ms ease;
@@ -270,6 +278,12 @@ body {
   grid-auto-flow: column;
 }
 
+.overview .card:hover {
+  cursor: pointer;
+  -webkit-filter: contrast(0.9);
+          filter: contrast(0.9);
+}
+
 .overview .card__stat {
   font-weight: 700;
   font-size: 2rem;
@@ -332,6 +346,7 @@ body {
   }
   .dashboard .card {
     margin: 0;
+    border-radius: 4px;
   }
   .overview {
     margin-bottom: 1em;
@@ -341,6 +356,7 @@ body {
   }
   .overview .card {
     margin: 0;
+    border-radius: 4px;
   }
 }
 

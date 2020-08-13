@@ -68,6 +68,11 @@
         @extend %card;
         margin-bottom: 2em;
 
+        &:hover {
+            cursor: pointer;
+            filter: contrast(0.9);
+        }
+
         &__name {
             @extend %heading-text-small;
             transition: color 1000ms ease;
