@@ -28,6 +28,33 @@ body {
     padding: 1.25em 0;
 }
 
+.attribution {
+    @extend %container-size;
+    @extend %flex-spaced;
+
+    p {
+        display: flex;
+        flex-direction: column;
+        color: $accent-color;
+        font-size: 0.9rem;
+
+        &:last-child {
+            text-align: right;
+        }
+
+        a {
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $secondary-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
+}
+
 /* === States === */
 *.is-toggled {
     margin-left: 2.3em !important;
