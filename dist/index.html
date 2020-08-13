@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="./css/main.css" />
         <title>Frontend Mentor | Dashboard</title>
         <script src="./js/theme.js"></script>
+        <script src="./js/animations.js"></script>
     </head>
     <body>
         <main>
@@ -17,8 +18,8 @@
                 <section class="dashboard">
                     <header class="heading">
                         <div class="heading__container--title">
-                            <h1 class="heading__title">Social Media Dashboard</h1>
-                            <p class="heading__subtitle">Total Followers: 23,004</p>
+                            <h1 class="heading__title fade-in">Social Media Dashboard</h1>
+                            <p class="heading__subtitle fade-in">Total Followers: 23,004</p>
                         </div>
                         <div class="heading__divider"></div>
                         <div class="heading__container--mode">
@@ -29,7 +30,7 @@
                         </div>
                     </header>
 
-                    <article class="card card--facebook">
+                    <article class="card card--facebook float-in" data-delay="0s">
                         <div>
                             <img class="card__icon" src="./images/icon-facebook.svg" alt="fb-icon" />
                             <h3 class="card__name">@nathanf</h3>
@@ -45,7 +46,7 @@
                         </div>
                     </article>
 
-                    <article class="card card--twitter">
+                    <article class="card card--twitter float-in"  data-delay="0.25s">
                         <div>
                             <img class="card__icon" src="./images/icon-twitter.svg" alt="twt-icon" />
                             <h3 class="card__name">@nathanf</h3>
@@ -61,7 +62,7 @@
                         </div>
                     </article>
 
-                    <article class="card card--insta">
+                    <article class="card card--insta float-in"  data-delay="0.5s">
                         <div>
                             <img class="card__icon" src="./images/icon-instagram.svg" alt="insta-icon" />
                             <h3 class="card__name">@realnathanf</h3>
@@ -77,7 +78,7 @@
                         </div>
                     </article>
 
-                    <article class="card card--youtube">
+                    <article class="card card--youtube float-in"  data-delay="0.75s">
                         <div>
                             <img class="card__icon" src="./images/icon-youtube.svg" alt="yt-icon" />
                             <h3 class="card__name">Nathan F.</h3>
@@ -93,10 +94,11 @@
                         </div>
                     </article>
                 </section>
-                <section class="overview">
-                    <h2 class="overview__header">Overview - Today</h2>
 
-                    <article class="card">
+                <section class="overview">
+                    <h2 class="overview__header fade-in">Overview - Today</h2>
+
+                    <article class="card float-in" data-delay="0s">
                         <h3 class="card__info">Page Views</h3>
                         <p class="card__stat">87</p>
                         <img class="card__icon" src="./images/icon-facebook.svg" alt="fb-icon" />
@@ -106,7 +108,7 @@
                         </div>
                     </article>
 
-                    <article class="card">
+                    <article class="card float-in" data-delay=".25s">
                         <h3 class="card__info">Likes</h3>
                         <p class="card__stat">52</p>
                         <img class="card__icon" src="./images/icon-facebook.svg" alt="fb-icon" />
@@ -116,7 +118,7 @@
                         </div>
                     </article>
 
-                    <article class="card">
+                    <article class="card float-in" data-delay=".5s">
                         <h3 class="card__info">Likes</h3>
                         <p class="card__stat">5462</p>
                         <img class="card__icon" src="./images/icon-instagram.svg" alt="insta-icon" />
@@ -126,7 +128,7 @@
                         </div>
                     </article>
 
-                    <article class="card">
+                    <article class="card float-in" data-delay=".75s">
                         <h3 class="card__info">Profile Views</h3>
                         <p class="card__stat">52k</p>
                         <img class="card__icon" src="./images/icon-instagram.svg" alt="insta-icon" />
@@ -136,7 +138,7 @@
                         </div>
                     </article>
 
-                    <article class="card">
+                    <article class="card float-in" data-delay="1s">
                         <h3 class="card__info">Retweets</h3>
                         <p class="card__stat">117</p>
                         <img class="card__icon" src="./images/icon-twitter.svg" alt="twt-icon" />
@@ -146,7 +148,7 @@
                         </div>
                     </article>
 
-                    <article class="card">
+                    <article class="card float-in" data-delay="1.25s">
                         <h3 class="card__info">Likes</h3>
                         <p class="card__stat">507</p>
                         <img class="card__icon" src="./images/icon-twitter.svg" alt="twt-icon" />
@@ -156,7 +158,7 @@
                         </div>
                     </article>
 
-                    <article class="card">
+                    <article class="card float-in" data-delay="1.5s">
                         <h3 class="card__info">Likes</h3>
                         <p class="card__stat">107</p>
                         <img class="card__icon" src="./images/icon-youtube.svg" alt="yt-icon" />
@@ -166,7 +168,7 @@
                         </div>
                     </article>
 
-                    <article class="card">
+                    <article class="card float-in" data-delay="1.75s">
                         <h3 class="card__info">Total Views</h3>
                         <p class="card__stat">1407</p>
                         <img class="card__icon" src="./images/icon-youtube.svg" alt="yt-icon" />
