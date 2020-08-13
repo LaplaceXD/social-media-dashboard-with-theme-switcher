@@ -16,7 +16,7 @@
   margin: auto;
 }
 
-.dashboard .card div {
+.dashboard .card div, .overview .card div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +47,7 @@
   height: 1px;
 }
 
-.dashboard .card {
+.dashboard .card, .overview .card {
   background-color: var(--primary-color);
   border-radius: 8px;
   padding: 2em;
@@ -65,20 +65,25 @@
 }
 
 /* === TypoGraphy === */
-.dashboard .card__name, .dashboard .card__update, .dashboard .card__day, .dashboard .heading__subtitle, .dashboard .heading__mode, .dashboard .card__identifier {
+.dashboard .card__update, .dashboard .card__day, .overview .card__update, .dashboard .card__name, .dashboard .heading__subtitle, .dashboard .heading__mode, .dashboard .card__identifier, .overview .card__info {
   color: var(--accent-color);
   font-weight: 700;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
 }
 
-.dashboard .card__name, .dashboard .card__update, .dashboard .card__day {
+.dashboard .card__update, .dashboard .card__day, .overview .card__update, .dashboard .card__name {
   font-size: 0.75rem;
   margin-left: 1em;
 }
 
-.dashboard .heading__title {
+.dashboard .heading__title, .overview__header {
   letter-spacing: 0.02em;
+}
+
+.dashboard .card__update, .dashboard .card__day, .overview .card__update {
+  margin-left: 0.25em;
+  font-weight: 700;
 }
 
 *,
@@ -168,11 +173,6 @@ body {
   margin-left: 0.5em;
 }
 
-.dashboard .card__update, .dashboard .card__day {
-  margin-left: 0.25em;
-  font-weight: 700;
-}
-
 .dashboard .card__update--up, .dashboard .card__day--up {
   color: #1db489;
 }
@@ -208,5 +208,45 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 2em;
+}
+
+.overview__header {
+  margin: 2em 0 1em 0;
+}
+
+.overview .card {
+  margin-bottom: 1.25em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-auto-flow: column;
+}
+
+.overview .card__stat {
+  font-weight: 700;
+  font-size: 2rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.overview .card__icon {
+  justify-self: flex-end;
+}
+
+.overview .card__update--up {
+  color: #1db489;
+}
+
+.overview .card__update--down {
+  color: #dc414c;
+}
+
+.overview .card div {
+  justify-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 /*# sourceMappingURL=main.css.map */

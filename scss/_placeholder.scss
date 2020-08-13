@@ -57,3 +57,9 @@
 %section-heading {
     letter-spacing: 0.02em;
 }
+
+%stat-text {
+    @extend %heading-text-small;
+    margin-left: 0.25em;
+    font-weight: 700;
+}

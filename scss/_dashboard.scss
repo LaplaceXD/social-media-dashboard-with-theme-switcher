@@ -73,9 +73,7 @@
 
         &__update,
         &__day {
-            @extend %heading-text-small;
-            margin-left: 0.25em;
-            font-weight: 700;
+            @extend %stat-text;
 
             &--up {
                 color: $stat-increase-color;
